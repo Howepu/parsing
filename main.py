@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from collections import defaultdict
 
-# Отправляем GET-запрос на страницу с лучшими фильмами imdb.com
+# Отправляем GET-запрос на страницу
 k = 1
 d = dict()
 while k <= 5:
