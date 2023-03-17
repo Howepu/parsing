@@ -19,7 +19,6 @@ while k <= 5:
     book = soup.findAll(class_='product-title__head')
     author = soup.findAll(class_='product-title__author')
     price = soup.findAll(class_='product-price__value')
-    price_temp = soup.findAll(class_='product-card__price product-card__row')
     for el in range(len(book)):
         temp = price_temp[el].find(class_='product-price__value').text if price_temp[el].find(class_='product-price__value') != None else " "
         d['Name'] = d.get('Name', []) + [book[el].text]
